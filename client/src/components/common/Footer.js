@@ -1,12 +1,12 @@
 const Footer = () => {
-	const link = "https://henok.us";
+	const link = "https://github.com/chalitha-pramod";
 	const target = "_blank";
 
 	return (
 		<div className="container">
-			Copyright © <small>{new Date().getFullYear()}</small> Henok R. Bedassa{" "}
+			Copyright © <small>{new Date().getFullYear()}</small> chalitha-pramod{" "}
 			<a href={link} target={target}>
-				henok.us
+				
 			</a>
 		</div>
 	);

@@ -39,11 +39,11 @@ function CrudAdd(props) {
 
 	return (
 		<div className="container" style={{ maxWidth: "400px" }}>
-			<h1>Create CRUD</h1>
+			<h1>Create Organization</h1>
 			<hr />
 			<form onSubmit={handleSubmit}>
 				<div className="form-group">
-					<label>Company Name</label>
+					<label>Organization Name</label>
 					<input
 						name="companyName"
 						type="text"
@@ -54,32 +54,21 @@ function CrudAdd(props) {
 					/>
 				</div>
 				<div className="form-group">
-					<label>Phone</label>
+					<label>Reg No</label>
 					<input
 						name="phone"
-						type="tel"
-						pattern="(251)-[0-9]{3}-[0-9]{6}"
+						type="text"
+						
 						required
 						value={crud.phone}
 						onChange={handleChange}
 						className="form-control"
 					/>
-					<small>Format: 251-XXX-XXXXXX</small>
+					
 				</div>
+				
 				<div className="form-group">
-					<label>Email</label>
-					<input
-						name="email"
-						type="email"
-						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
-						required
-						value={crud.email}
-						onChange={handleChange}
-						className="form-control"
-					/>
-				</div>
-				<div className="form-group">
-					<label>Location</label>
+					<label>Address</label>
 					<input
 						name="location"
 						type="text"
@@ -89,28 +78,9 @@ function CrudAdd(props) {
 						className="form-control"
 					/>
 				</div>
-				<div className="form-group">
-					<label>Website/Social Link</label>
-					<input
-						name="link"
-						type="url"
-						value={crud.link}
-						onChange={handleChange}
-						className="form-control"
-					/>
-					<small>Format: https://yourlink.ext</small>
-				</div>
+				
 
-				<div className="form-group">
-					<label>Description</label>
-					<textarea
-						name="description"
-						row="10"
-						value={crud.description}
-						onChange={handleChange}
-						className="form-control"
-					/>
-				</div>
+				
 
 				<div className="btn-group">
 					<input type="submit" value="Submit" className="btn btn-primary" />
